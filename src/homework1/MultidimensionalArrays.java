@@ -11,7 +11,7 @@ public class MultidimensionalArrays {
             System.out.println(" ");
         }
     }
-    public static void taskA() {
+    public static void sumProductDiagonal() {
         System.out.println("----5.a----");
         int[][] arr = new int[8][8];
         for (int i = 0; i < arr.length; i++) {
@@ -53,7 +53,7 @@ public class MultidimensionalArrays {
         System.out.println("Sum on the side diagonal: " + sum);
     }
 
-    public static void taskB() {
+    public static void valueAndIndexElement() {
         System.out.println("----5.b----");
         int[][] arr = new int[8][5];
         for (int i = 0; i < arr.length; i++) {
@@ -81,7 +81,7 @@ public class MultidimensionalArrays {
         }
         System.out.println("MaxEl: "+maxEl+" Index: "+iForMax+ ", " + jForMax);
     }
-    public static void taskC(){
+    public static void rowIndexWithMaxProduct(){
         System.out.println("----5.c----");
         int[][] arr = new int[8][5];
         for (int i = 0; i < arr.length; i++) {
@@ -107,7 +107,7 @@ public class MultidimensionalArrays {
         }
         System.out.println("Max composition: "+maxString+" Index of string: "+ maxI);
     }
-    public static void taskD(){
+    public static void sortedRows(){
         System.out.println("----5.d----");
         int[][] arr = new int[10][7];
         for (int i = 0; i < arr.length; i++) {

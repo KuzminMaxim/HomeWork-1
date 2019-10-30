@@ -1,7 +1,7 @@
 package homework1;
 
 public class NestedLoops {
-    public static void rectangle(){
+    public static void drawRectangle(){
         System.out.println("--------3. Nested loops--------");
         System.out.println("----3.1----");
         int size = 5;
@@ -13,7 +13,7 @@ public class NestedLoops {
         }
         System.out.println();
     }
-    public static void triangle(){
+    public static void drawTriangle(){
         System.out.println("----3.2----");
         System.out.println("----triangle1----");
         for (int i = 1; i<=8; i++){
@@ -30,8 +30,8 @@ public class NestedLoops {
             System.out.println();
         }
     }
-        public static void circle(){
-            System.out.println();
+        public static void drawCircle(){
+            System.out.println("----Circle----");
             int length = 8;
             int width = 8;
             for (int i = 1; i <= length; i++)

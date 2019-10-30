@@ -39,7 +39,7 @@ public class OneArrays {
         System.out.println("In decreasing order:"+Arrays.toString(arr));
     }
 
-    public static void a(){
+    public static void arrOfOddNumbers(){
         System.out.println("----4.a----");
         int[] arr = new int[50];
         for (int i = 0, d = 1; d < 100; i++, d+=2) {
@@ -48,7 +48,7 @@ public class OneArrays {
         asc(arr);
         desc(arr);
     }
-    public static void b(){
+    public static void numberEvenOddElements(){
         System.out.println("----4.b----");
         int[] arr = new int[20];
         int even = 0;
@@ -66,7 +66,7 @@ public class OneArrays {
         System.out.println("Odd: "+ odd);
 
         }
-        public static void c(){
+        public static void replacingOddIndexByZero(){
             System.out.println("----4.c----");
         int[] arr = new int[10];
             for (int i = 0; i<arr.length; i++) {
@@ -80,7 +80,7 @@ public class OneArrays {
             }
             System.out.println("Array of 10 numbers with zero: "+ Arrays.toString(arr));
         }
-        public static void d(){
+        public static void maxMinElementsPlusIndex(){
         System.out.println("----4.d----");
         int[]arr = new int[15];
         int min = arr[0];
@@ -106,7 +106,7 @@ public class OneArrays {
             System.out.println("Min: "+min);
             System.out.println("Max: "+max);
         }
-        public static void e(){
+        public static void averageComparison(){
         System.out.println("----4.e----");
         int[] arr1 = new int[10];
         int[] arr2 = new int[10];
@@ -136,7 +136,7 @@ public class OneArrays {
                     System.out.println("The average of two arrays is the same");
                 }
         }
-        public static void f(){
+        public static void frequentElement(){
         System.out.println("----4.f----");
         int[] arr = new int[20];
         int zeroCount =0;
@@ -157,20 +157,22 @@ public class OneArrays {
             if (minusOneCount>zeroCount && minusOneCount>oneCount){
                 System.out.println("Most common: -1");
             }
-            else if (zeroCount>minusOneCount && zeroCount>oneCount){
-                System.out.println("Most common: 0");
-            }
-            else if (oneCount>minusOneCount && oneCount>zeroCount){
-                System.out.println("Most common: 1");
-            }
-            if (minusOneCount == zeroCount){
-                System.out.println("The same number of times found: -1 and 0");
-            }
-            else if (minusOneCount == oneCount){
-                System.out.println("The same number of times found: -1 and 1");
-            }
-            else if (zeroCount == oneCount){
-                System.out.println("The same number of times found: 0 and 1");
+            else{
+                if (zeroCount>minusOneCount && zeroCount>oneCount){
+                    System.out.println("Most common: 0");
+                }
+                else if (oneCount>minusOneCount && oneCount>zeroCount){
+                    System.out.println("Most common: 1");
+                }
+                else if (minusOneCount == zeroCount){
+                    System.out.println("The same number of times found: -1 and 0");
+                }
+                else if (minusOneCount == oneCount){
+                    System.out.println("The same number of times found: -1 and 1");
+                }
+                else if (zeroCount == oneCount){
+                    System.out.println("The same number of times found: 0 and 1");
+                }
             }
 
         }

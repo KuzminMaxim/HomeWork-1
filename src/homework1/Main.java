@@ -22,20 +22,20 @@ public class Main {
         long estimatedTime = System.nanoTime()- startTime;
         System.out.println("Result = "+Factorial.factorialRecursion(x)+", time with recursion: "+estimatedTime+" - longer");
         ////3. Nested loops////
-        NestedLoops.rectangle();
-        NestedLoops.triangle();
-        NestedLoops.circle();
+        NestedLoops.drawRectangle();
+        NestedLoops.drawTriangle();
+        NestedLoops.drawCircle();
         ////4. One-dimensional arrays ////
-        OneArrays.a();
-        OneArrays.b();
-        OneArrays.c();
-        OneArrays.d();
-        OneArrays.e();
-        OneArrays.f();
+        OneArrays.arrOfOddNumbers();
+        OneArrays.numberEvenOddElements();
+        OneArrays.replacingOddIndexByZero();
+        OneArrays.maxMinElementsPlusIndex();
+        OneArrays.averageComparison();
+        OneArrays.frequentElement();
         ////5. Multidimensional Arrays////
-        MultidimensionalArrays.taskA();
-        MultidimensionalArrays.taskB();
-        MultidimensionalArrays.taskC();
-        MultidimensionalArrays.taskD();
+        MultidimensionalArrays.sumProductDiagonal();
+        MultidimensionalArrays.valueAndIndexElement();
+        MultidimensionalArrays.rowIndexWithMaxProduct();
+        MultidimensionalArrays.sortedRows();
     }
 }
