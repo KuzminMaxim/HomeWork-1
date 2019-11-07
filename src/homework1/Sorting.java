@@ -58,4 +58,13 @@ public class Sorting {
         System.out.println("Time: "+estimateTime+" - longest");
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }
