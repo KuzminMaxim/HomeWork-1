@@ -19,11 +19,11 @@ public class MultidimensionalArrays {
                 arr[i][j] = (int) (1 + Math.random() * 99);
             }
         }
-        MainDiagonal(arr);
-        SideDiagonal(arr);
+        mainDiagonal(arr);
+        sideDiagonal(arr);
     }
 
-    private static void MainDiagonal(int[][] arr) {
+    private static void mainDiagonal(int[][] arr) {
         int sum = 0;
         long composition = 1;
         for (int i = 0; i < arr.length; i++) {
@@ -38,7 +38,7 @@ public class MultidimensionalArrays {
         System.out.println("Sum on the main diagonal: " + sum);
     }
 
-    private static void SideDiagonal(int[][] arr) {
+    private static void sideDiagonal(int[][] arr) {
         int sum = 0;
         long composition = 1;
         for (int i = arr.length - 1; i >= 0; i--) {
